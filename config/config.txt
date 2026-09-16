@@ -1,0 +1,4 @@
+# /boot/firmware/config.txt
+dtoverlay=max98357a
+dtparam=audio=off
+dtparam=disable-bt
