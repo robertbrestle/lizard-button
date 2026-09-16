@@ -5,7 +5,8 @@ After=network.target
 [Service]
 WorkingDirectory=/home/pi/lizard-button
 Environment=HOME=/home/pi/lizard-button
-ExecStart=/usr/bin/python3 /home/pi/lizard-button/button_listener.py
+EnvironmentFile=/home/pi/lizard-button/device.env
+ExecStart=/home/pi/iot-env/bin/python3 /home/pi/lizard-button/button.py
 Restart=always
 User=pi
 

@@ -13,7 +13,7 @@ sudo cp asound.conf /etc/asound.conf
 sudo cp lizard-api.service /etc/systemd/system/
 sudo cp lizard-button.service /etc/systemd/system/
 
-# enable and start services
+# enable services
 sudo systemctl enable lizard-api.service
 sudo systemctl enable lizard-button.service
 
