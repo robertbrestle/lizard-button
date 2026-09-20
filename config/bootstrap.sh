@@ -3,6 +3,9 @@
 # update + upgrade os
 sudo apt update && sudo apt upgrade -y
 
+# install mpg123 for MP3 support
+sudo apt install mpg123 -y
+
 # configure MAX98357A sound card, disable bluetooth
 cat config.txt | sudo tee -a /boot/firmware/config.txt > /dev/null
 
